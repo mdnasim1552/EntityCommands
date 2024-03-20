@@ -1,0 +1,16 @@
+***cd "F:\ASP.NET Core MVC\OnlineCV\OnlineCV"
+***dotnet ef dbcontext scaffold name=DefaultConnection Microsoft.EntityFrameworkCore.SqlServer --output-dir Models --context ApplicationDbContext --data-annotations
+*****dotnet ef dbcontext scaffold name=DefaultConnection Microsoft.EntityFrameworkCore.SqlServer --output-dir Models --context-dir Data --context ApplicationDbContext --data-annotations --no-onconfiguring --force
+*****dotnet ef dbcontext scaffold name=DefaultConnection Microsoft.EntityFrameworkCore.SqlServer --output-dir ../CVEntity/Models --context-dir Data --context ApplicationDbContext --data-annotations --no-onconfiguring --force
+*****dotnet ef dbcontext scaffold name=DefaultConnection Microsoft.EntityFrameworkCore.SqlServer --output-dir Models --context-dir Data --context UserDbContext --data-annotations --no-onconfiguring --force --table [dbo].[USERINF]
+
+dotnet ef dbcontext scaffold name=DefaultConnection Microsoft.EntityFrameworkCore.SqlServer --output-dir Models --context-dir Data --context ApplicationDbContext --data-annotations --no-onconfiguring --force --table Table1 --table Table2
+dotnet ef dbcontext scaffold name=DefaultConnection Microsoft.EntityFrameworkCore.SqlServer --output-dir Models --context-dir Data --context ApplicationDbContext --data-annotations --no-onconfiguring --force --table [dbo].[USERINF]
+
+
+
+
+dotnet tool install --global dotnet-ef
+
+dotnet tool install --global dotnet-ef --version 8.0.2
+dotnet --version
