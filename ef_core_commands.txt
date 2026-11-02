@@ -20,3 +20,5 @@ dotnet --version
 Migration commands:
 dotnet ef migrations add InitialMigration --project Inventory
 dotnet ef database update --project Inventory
+Unblock-File .\dotnet-tools.json
+Get-Item .\dotnet-tools.json -Stream *
