@@ -22,3 +22,5 @@ dotnet ef migrations add InitialMigration --project Inventory
 dotnet ef database update --project Inventory
 Unblock-File .\dotnet-tools.json
 Get-Item .\dotnet-tools.json -Stream *
+dotnet ef migrations add CashBook --project PosManagement.Migrations.Sqlite --startup-project PosManagement.Migrations.Sqlite --context PosManagement.Data.ApplicationDbContext --output-dir Migrations
+dotnet ef migrations add ShopSettings --project PosManagement.Migrations.SqlServer --startup-project PosManagement.Migrations.SqlServer --context PosManagement.Data.ApplicationDbContext --output-dir Migrations
